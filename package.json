@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "yuque-hexo clean && YUQUE_TOKEN=$YUQUE_TOKEN yuque-hexo sync && hexo clean && hexo generate",
+    "start": "yuque-hexo clean && DEBUG=common-bin YUQUE_TOKEN=$YUQUE_TOKEN yuque-hexo sync && hexo clean && hexo generate",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
