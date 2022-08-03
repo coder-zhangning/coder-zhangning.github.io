@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "yuque-hexo clean && yuque-hexo sync && hexo clean && hexo generate",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
@@ -22,5 +23,13 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^0.0.3"
+  },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "语雀个人路径",
+    "repo": "知识库名称",
+    "mdNameFormat": "title",
+    "postPath": "source/_posts",
+    "onlyPublished": false
   }
 }
