@@ -26,8 +26,8 @@
   },
   "yuqueConfig": {
     "baseUrl": "https://www.yuque.com/api/v2",
-    "login": "语雀个人路径",
-    "repo": "知识库名称",
+    "login": "spongebob-iifz0",
+    "repo": "npxz9y",
     "mdNameFormat": "title",
     "postPath": "source/_posts",
     "onlyPublished": false
