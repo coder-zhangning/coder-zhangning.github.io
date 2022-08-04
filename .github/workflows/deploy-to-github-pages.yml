@@ -14,10 +14,10 @@ jobs:
     steps:
     # check it to your workflow can access it
     # from: https://github.com/actions/checkout
-    - name: Checkout Repository hexo branch
+    - name: Checkout Repository gh-pages branch
       uses: actions/checkout@v3
       with:
-        ref: gh-pages
+        ref: main
       
     # from: https://github.com/actions/setup-node  
     - name: Setup Node.js 16.x 
