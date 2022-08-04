@@ -17,7 +17,7 @@ jobs:
     - name: Checkout Repository hexo branch
       uses: actions/checkout@v3
       with:
-        ref: hexo
+        ref: gh-pages
       
     # from: https://github.com/actions/setup-node  
     - name: Setup Node.js 16.x 
@@ -40,6 +40,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_branch: main
+          publish_branch: gh-pages
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}    
